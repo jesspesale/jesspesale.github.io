@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Recipe Safe"
-date:       2021-03-31 21:17:50 +0000
+title:      "Recipe Safe - Sinatra Project"
+date:       2021-03-31 17:17:50 -0400
 permalink:  recipe_safe
 ---
 
