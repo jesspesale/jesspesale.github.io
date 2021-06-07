@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails Project - Nested Resources"
-date:       2021-06-07 20:18:04 +0000
+date:       2021-06-07 16:18:05 -0400
 permalink:  rails_project_-_nested_resources
 ---
 
