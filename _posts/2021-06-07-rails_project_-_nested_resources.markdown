@@ -36,16 +36,18 @@ And when were writing the link, our URI helper needs to take in a specific resta
      ** Restaurant_reviews_path(@restaurant) **
 		 
 Then in my reviews controller I made a conditional to account for whether the user is trying to see all of the reviews, or all the reviews for a particular restaurant:
+
 ```
-    def index
-        if params[:restaurant_id]  
-              @restaurant = Restaurant.find_by_id(params[:restaurant_id])
-              @reviews = @restaurant.reviews
-        else    
-            @reviews = Review.all
-        end
-    end
-		```
+    def index;
+        if params[:restaurant_id]  ;
+              @restaurant = Restaurant.find_by_id(params[:restaurant_id]);
+              @reviews = @restaurant.reviews;
+        else    ;
+            @reviews = Review.all;
+        end;
+    end;
+```
+
 		
 So if the restaurant_id is in the params, it finds all the reviews for that restaurant. Otherwise it just lists all the reviews that are saved in the database.
 		
