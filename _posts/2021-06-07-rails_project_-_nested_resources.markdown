@@ -12,7 +12,6 @@ Nested routes/ resources are a good way of representing a belongs to and has man
 
 For my Rails project I created a Restaurant Review website. A user can sign up/ log in, add restaurants and review any of the restaurants (created by them or others). For the nested resource for my project, I thought the perfect scenario would be to be able to view all the reviews for a particular restaurant. Since Restaurants has_many :reviews and a review belongs_to :restaurant, a review is technically considered the child object to a restaurant so it will be the nested resource under the restaurant. The code in my routes file looks like this:
 
-```
 
   Rails.application.routes.draw do
 
@@ -22,9 +21,7 @@ For my Rails project I created a Restaurant Review website. A user can sign up/ 
 	           resources :reviews, only: [:new, :index]
        end
 			 
-   end;
-	 
-```
+   end
 
 
 
