@@ -22,9 +22,11 @@ For my Rails project I created a Restaurant Review website. A user can sign up/ 
 	           resources :reviews, only: [:new, :index]
        end
 			 
-   end
+   end;
 	 
-	 ```
+```
+
+
 
 Notice we have the nested routes for :reviews under restaurants, but then we also have the regurlar :reviews routes outside of the nested so people can still edit, create and view reviews outside of the context of the specific restaurant.
 
